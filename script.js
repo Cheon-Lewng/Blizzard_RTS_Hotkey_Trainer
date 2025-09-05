@@ -35,31 +35,43 @@ function selectNewTask() {
     const terranData = gameData.starcraftBW.terran;
     
     // 2. Randomly decide whether to prompt with a unit or building.
-    const isBuildingTask = Math.random() < 0.5; // 50% chance for either
+    const isBuildTask = Math.random() < 0.1; // 50% chance for either
 
-    let currentEntity;
-    let availabiieCommands;
+    if (isBuildTask) {
+        // 3. Handle a worker-building task
+        const buildMenus = terranData.build_menus;
+        const menuKeys = Object.keys(buildMenus);
+        const randomMenuKey = menuKeys[Math.floor(Math.random() * menuKeys.length)];
+        const randomMenu = buildMenus[randomMenuKey];
 
-    if (isBuildingTask) {
-        // 3. Select a random building.
-        const buildings = terranData.buildings;
-        currentEntity = buildings[Math.floor(Math.random() * buildings.length)];
-        availabiieCommands = currentEntity.commands;
+        // 4. Randomly select a building from that menu
+        const buildingToBuild = randomMenu[Math.floor(Math.random() * randomMenu.length)];
+
+        currentTask = {
+            entity: terranData.units[0],
+            command: {
+                hotkey: (randomMenuKey === 'basic_structures') ? 'B' : 'V',
+                // Store a reference to the actual building task
+                building: buildingToBuild,
+                menuImage: randomMenu.image
+            }
+        };
+
     } else {
-        // 3. Select a random unit.
+        // 3. Handle a standard unit/building command
         const units = terranData.units;
         currentEntity = units[Math.floor(Math.random() * units.length)];
         availabiieCommands = currentEntity.commands;
-    }
 
-    // 4. Randomly select a command from the entity's commands.
-    const currentCommand = availabiieCommands[Math.floor(Math.random() * availabiieCommands.length)];
+        // 4. Randomly select a command from the entity's commands.
+        const currentCommand = availabiieCommands[Math.floor(Math.random() * availabiieCommands.length)];
     
-    // 5. Update the global currentTask variable
-    currentTask = {
-        entity: currentEntity,
-        command: currentCommand
-    };
+        // 5. Update the global currentTask variable
+        currentTask = {
+            entity: currentEntity,
+            command: currentCommand
+        };
+    }
 
     // 6. Display the task on the GUI
     displayTask();
@@ -87,33 +99,65 @@ function displayTask() {
 }
 
 // 3. User Input
+let isAwaitingSecondaryHotkey = false;
+
 document.addEventListener('keydown', (event) => {
     // Get pressed key and convert it to uppercase for consistency
     const pressedKey = event.key.toUpperCase();
 
-    // Make sure there is a task to validate against
-    if (currentTask && currentTask.command) {
-        // Get the hotkey from the current task
-        const correctHotkey = currentTask.command.hotkey.toUpperCase();
+    if (isAwaitingSecondaryHotkey) {
+        // SECONDARY KEYPRESS LOGIC
+        const correctSecondaryKey = currentTask.command.secondary_hotkey.toUpperCase();
 
-        // Check if the user's key matches the correct hotkey
-        if (pressedKey === correctHotkey) {
-            console.log('Correct key pressed!');
+        if (pressedKey === correctSecondaryKey) {
+            // Correct second keypress
+            isAwaitingSecondaryHotkey = false;
+            console.log('Combo complete! Correct.');
             // Provide visual feedback for a correct answer
             document.body.style.backgroundColor = 'lightgreen';
             setTimeout(() => {
                 document.body.style.backgroundColor = 'white';
             }, 200);
-
-            // Select the next task to continue the training session
-            selectNewTask(); // Call the function to display the next task
+            selectNewTask();
         } else {
-            console.log('Incorrect key pressed. Try again.');
+            console.log('Incorrect second keypress.');
             // Provide visual feedback for an incorrect answer
             document.body.style.backgroundColor = 'red';
             setTimeout(() => {
                 document.body.style.backgroundColor = 'white';
             }, 200);
+        }
+    } else {
+    // PR
+        if (currentTask && currentTask.command) {
+            const correctHotkey = currentTask.command.hotkey.toUpperCase();
+
+            if (pressedKey === correctHotkey) {
+                if (currentTask.command.building) {
+                    isAwaitingSecondaryHotkey = true;
+
+                    // Change the display to the build menu card
+                    document.getElementById('command-card-image').src = currentTask.command.menuImage;
+                    document.getElementById('command-card-image').style.display = 'block';
+                    document.getElementById('command-text').textContent = currentTask.command.building.name;
+                    console.log('Correct primary keypress. Awaiting secondary hotkey.');
+                } else {
+                    console.log('Correct keypress.');
+                    // Provide visual feedback for a correct answer
+                    document.body.style.backgroundColor = 'lightgreen';
+                    setTimeout(() => {
+                        document.body.style.backgroundColor = 'white';
+                    }, 200);
+                    selectNewTask();
+                }
+            } else {
+                console.log('Incorrect primary keypress.');
+                // Provide visual feedback for an incorrect answer
+                document.body.style.backgroundColor = 'red';
+                setTimeout(() => {
+                    document.body.style.backgroundColor = 'white';
+                }, 200);
+            }
         }
     }
 });
