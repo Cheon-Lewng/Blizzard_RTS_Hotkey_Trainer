@@ -125,10 +125,10 @@
                 },
                 {
                     "name": "Siege Tank",
-                    "image": "images/scbw/terran/siege_tank.png",
+                    "image": "images/scbw/terran/tank.png",
                     "command_card": {
-                        "default": "images/scbw/terran/siege_tank_card_default.png",
-                        "sieged": "images/scbw/terran/siege_tank_card_sieged.png"
+                        "default": "images/scbw/terran/tank_card_default.png",
+                        "sieged": "images/scbw/terran/tank_card_sieged.png"
                     },
                     "commands": {
                         "default": [
@@ -141,8 +141,6 @@
                         "sieged": [
                             "stop",
                             "attack",
-                             "patrol",
-                           "hold",
                             { "name": "Unsiege", "hotkey": "D", "category": "basic" }
                         ]
                     }
@@ -208,8 +206,8 @@
                 },
                 {
                     "name": "Science Vessel",
-                    "image": "images/scbw/terran/science_vessel.png",
-                    "command_card": "images/scbw/terran/science_vessel_card.png",
+                    "image": "images/scbw/terran/vessel.png",
+                    "command_card": "images/scbw/terran/vessel_card.png",
                     "commands": [
                         "stop",
                         "patrol",
@@ -222,7 +220,7 @@
                 {
                     "name": "Valkyrie",
                     "image": "images/scbw/terran/valkyrie.png",
-                    "command_card": "images/scbw/terran/valkyrie_ccard.png",
+                    "command_card": "images/scbw/terran/valkyrie_card.png",
                     "commands": [
                         "stop",
                         "attack",
@@ -257,26 +255,26 @@
                 },
                 {
                     "name": "Comsat Station",
-                    "image": "images/scbw/terran/comsat_station.png",
-                    "command_card": "images/scbw/terran/comsat_station_card.png",
+                    "image": "images/scbw/terran/comsat.png",
+                    "command_card": "images/scbw/terran/comsat_card.png",
                     "commands": [
                         { "name": "Scanner Sweep", "hotkey": "S", "category": "ability" }
                     ]
                 },
                 {
                     "name": "Nuclear Silo",
-                    "image": "images/scbw/terran/nuclear_silo.png",
-                    "command_card": "images/scbw/terran/nuclear_silo_card.png",
+                    "image": "images/scbw/terran/silo.png",
+                    "command_card": "images/scbw/terran/silo_card.png",
                     "commands": [
                         { "name": "Arm Nuclear Silo", "hotkey": "F", "category": "ability" }
                     ]
                 },
                 {
                     "name": "Engineering Bay",
-                    "image": "images/scbw/terran/engineering_bay.png",
+                    "image": "images/scbw/terran/ebay.png",
                     "command_card": {
-                        "default": "images/scbw/terran/engineering_card_default.png",
-                        "lifted": "images/scbw/terran/engineering_card_lifted.png"
+                        "default": "images/scbw/terran/ebay_card_default.png",
+                        "lifted": "images/scbw/terran/ebay_card_lifted.png"
                     },
                     "commands": {
                         "default": [
@@ -314,8 +312,8 @@
                 },
                 {
                     "name": "Missile Turret",
-                    "image": "images/scbw/terran/missile_turret.png",
-                    "command_card": "images/scbw/terran/missile_turret_card.png",
+                    "image": "images/scbw/terran/turret.png",
+                    "command_card": "images/scbw/terran/turret_card.png",
                     "commands": [
                         "stop",
                         "attack"
