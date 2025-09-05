@@ -34,8 +34,8 @@
             "units": [
                 {
                     "name": "SCV",
-                    "image": "images/scbw/terran/scv.png",
-                    "command_card": "images/scbw/terran/scv_card.png",
+                    "image": "../images/scbw/terran/scv.png",
+                    "command_card": "../images/scbw/terran/scv_card.png",
                     "commands": [
                             "stop",
                             "attack",
@@ -48,8 +48,8 @@
                 },
                 {
                     "name": "Marine",
-                    "image": "images/scbw/terran/marine.png",
-                    "command_card": "images/scbw/terran/marine_card.png",
+                    "image": "../images/scbw/terran/marine.png",
+                    "command_card": "../images/scbw/terran/marine_card.png",
                     "commands": [
                         "stop",
                         "attack",
@@ -60,8 +60,8 @@
                 },
                  {
                     "name": "Firebat",
-                    "image": "images/scbw/terran/firebat.png",
-                    "command_card": "images/scbw/terran/firebat_card.png",
+                    "image": "../images/scbw/terran/firebat.png",
+                    "command_card": "../images/scbw/terran/firebat_card.png",
                     "commands": [
                         "stop",
                         "attack",
@@ -72,10 +72,10 @@
                 },
                 {
                     "name": "Ghost",
-                    "image": "images/scbw/terran/ghost.png",
+                    "image": "../images/scbw/terran/ghost.png",
                     "command_card": {
-                        "default": "images/scbw/terran/ghost_card_default.png",
-                        "cloaked": "images/scbw/terran/ghost_card_cloaked.png"
+                        "default": "../images/scbw/terran/ghost_card_default.png",
+                        "cloaked": "../images/scbw/terran/ghost_card_cloaked.png"
                     },
                     "commands": {
                         "default": [
@@ -100,8 +100,8 @@
                 },
                 {
                     "name": "Medic",
-                    "image": "images/scbw/terran/medic.png",
-                    "command_card": "images/scbw/terran/medic_card.png",
+                    "image": "../images/scbw/terran/medic.png",
+                    "command_card": "../images/scbw/terran/medic_card.png",
                     "commands": [
                         "stop",
                         "patrol",
@@ -113,8 +113,8 @@
                 },
                 {
                     "name": "Vulture",
-                    "image": "images/scbw/terran/vulture.png",
-                    "command_card": "images/scbw/terran/vulture_card.png",
+                    "image": "../images/scbw/terran/vulture.png",
+                    "command_card": "../images/scbw/terran/vulture_card.png",
                     "commands": [
                         "stop",
                         "attack",
@@ -125,10 +125,10 @@
                 },
                 {
                     "name": "Siege Tank",
-                    "image": "images/scbw/terran/tank.png",
+                    "image": "../images/scbw/terran/tank.png",
                     "command_card": {
-                        "default": "images/scbw/terran/tank_card_default.png",
-                        "sieged": "images/scbw/terran/tank_card_sieged.png"
+                        "default": "../images/scbw/terran/tank_card_default.png",
+                        "sieged": "../images/scbw/terran/tank_card_sieged.png"
                     },
                     "commands": {
                         "default": [
@@ -147,8 +147,8 @@
                 },
                 {
                     "name": "Goliath",
-                    "image": "images/scbw/terran/goliath.png",
-                    "command_card": "images/scbw/terran/goliath_card.png",
+                    "image": "../images/scbw/terran/goliath.png",
+                    "command_card": "../images/scbw/terran/goliath_card.png",
                     "commands": [
                         "stop",
                         "attack",
@@ -158,10 +158,10 @@
                 },
                 {
                     "name": "Wraith",
-                    "image": "images/scbw/terran/wraith.png",
+                    "image": "../images/scbw/terran/wraith.png",
                     "command_card": {
-                        "default": "images/scbw/terran/wraith_card_default.png",
-                        "cloaked": "images/scbw/terran/wraith_card_cloaked.png"
+                        "default": "../images/scbw/terran/wraith_card_default.png",
+                        "cloaked": "../images/scbw/terran/wraith_card_cloaked.png"
                     },
                     "commands": {
                         "default": [
@@ -182,8 +182,8 @@
                 },
                 {
                     "name": "Dropship",
-                    "image": "images/scbw/terran/dropship.png",
-                    "command_card": "images/scbw/terran/dropship_card.png",
+                    "image": "../images/scbw/terran/dropship.png",
+                    "command_card": "../images/scbw/terran/dropship_card.png",
                     "commands": [
                         "stop",
                         "patrol",
@@ -194,8 +194,8 @@
                 },
                 {
                     "name": "Battlecruiser",
-                    "image": "images/scbw/terran/battlecruiser.png",
-                    "command_card": "images/scbw/terran/battlecruiser_card.png",
+                    "image": "../images/scbw/terran/battlecruiser.png",
+                    "command_card": "../images/scbw/terran/battlecruiser_card.png",
                     "commands": [
                         "stop",
                         "attack",
@@ -206,8 +206,8 @@
                 },
                 {
                     "name": "Science Vessel",
-                    "image": "images/scbw/terran/vessel.png",
-                    "command_card": "images/scbw/terran/vessel_card.png",
+                    "image": "../images/scbw/terran/vessel.png",
+                    "command_card": "../images/scbw/terran/vessel_card.png",
                     "commands": [
                         "stop",
                         "patrol",
@@ -219,8 +219,8 @@
                 },
                 {
                     "name": "Valkyrie",
-                    "image": "images/scbw/terran/valkyrie.png",
-                    "command_card": "images/scbw/terran/valkyrie_card.png",
+                    "image": "../images/scbw/terran/valkyrie.png",
+                    "command_card": "../images/scbw/terran/valkyrie_card.png",
                     "commands": [
                         "stop",
                         "attack",
@@ -232,10 +232,10 @@
             "buildings": [
                 {
                     "name": "Command Center",
-                    "image": "images/scbw/terran/cc.png",
+                    "image": "../images/scbw/terran/cc.png",
                     "command_card": {
-                        "default": "images/scbw/terran/cc_card_default.png",
-                        "lifted": "images/scbw/terran/cc_card_lifted.png"
+                        "default": "../images/scbw/terran/cc_card_default.png",
+                        "lifted": "../images/scbw/terran/cc_card_lifted.png"
                     },
                     "commands": {
                         "default": [
@@ -255,26 +255,26 @@
                 },
                 {
                     "name": "Comsat Station",
-                    "image": "images/scbw/terran/comsat.png",
-                    "command_card": "images/scbw/terran/comsat_card.png",
+                    "image": "../images/scbw/terran/comsat.png",
+                    "command_card": "../images/scbw/terran/comsat_card.png",
                     "commands": [
                         { "name": "Scanner Sweep", "hotkey": "S", "category": "ability" }
                     ]
                 },
                 {
                     "name": "Nuclear Silo",
-                    "image": "images/scbw/terran/silo.png",
-                    "command_card": "images/scbw/terran/silo_card.png",
+                    "image": "../images/scbw/terran/silo.png",
+                    "command_card": "../images/scbw/terran/silo_card.png",
                     "commands": [
                         { "name": "Arm Nuclear Silo", "hotkey": "F", "category": "ability" }
                     ]
                 },
                 {
                     "name": "Engineering Bay",
-                    "image": "images/scbw/terran/ebay.png",
+                    "image": "../images/scbw/terran/ebay.png",
                     "command_card": {
-                        "default": "images/scbw/terran/ebay_card_default.png",
-                        "lifted": "images/scbw/terran/ebay_card_lifted.png"
+                        "default": "../images/scbw/terran/ebay_card_default.png",
+                        "lifted": "../images/scbw/terran/ebay_card_lifted.png"
                     },
                     "commands": {
                         "default": [
@@ -290,10 +290,10 @@
                 },
                 {
                     "name": "Barracks",
-                    "image": "images/scbw/terran/barracks.png",
+                    "image": "../images/scbw/terran/barracks.png",
                     "command_card": {
-                        "default": "images/scbw/terran/barracks_card_default.png",
-                        "lifted": "images/scbw/terran/barracks_card_lifted.png"
+                        "default": "../images/scbw/terran/barracks_card_default.png",
+                        "lifted": "../images/scbw/terran/barracks_card_lifted.png"
                     },
                     "commands": {
                         "default": [
@@ -312,8 +312,8 @@
                 },
                 {
                     "name": "Missile Turret",
-                    "image": "images/scbw/terran/turret.png",
-                    "command_card": "images/scbw/terran/turret_card.png",
+                    "image": "../images/scbw/terran/turret.png",
+                    "command_card": "../images/scbw/terran/turret_card.png",
                     "commands": [
                         "stop",
                         "attack"
@@ -321,8 +321,8 @@
                 },
                 {
                     "name": "Academy",
-                    "image": "images/scbw/terran/academy.png",
-                    "command_card": "images/scbw/terran/academy_card_default.png",
+                    "image": "../images/scbw/terran/academy.png",
+                    "command_card": "../images/scbw/terran/academy_card_default.png",
                     "commands": [
                         { "name": "Research U-238 Shells", "hotkey": "Q", "category": "upgrade" },
                         { "name": "Research Stim Pack", "hotkey": "W", "category": "upgrade" },
@@ -333,8 +333,8 @@
                 },
                 {
                     "name": "Bunker",
-                    "image": "images/scbw/terran/bunker.png",
-                    "command_card": "images/scbw/terran/bunker_card.png",
+                    "image": "../images/scbw/terran/bunker.png",
+                    "command_card": "../images/scbw/terran/bunker_card.png",
                     "commands": [
                         "load",
                         "unload"
@@ -342,10 +342,10 @@
                 },
                 {
                     "name": "Factory",
-                    "image": "images/scbw/terran/factory.png",
+                    "image": "../images/scbw/terran/factory.png",
                     "command_card": {
-                        "default": "images/scbw/terran/factory__card_default.png",
-                        "lifted": "images/scbw/terran/factory_card_lifted.png"
+                        "default": "../images/scbw/terran/factory__card_default.png",
+                        "lifted": "../images/scbw/terran/factory_card_lifted.png"
                     },
                     "commands": {
                         "default": [
@@ -365,8 +365,8 @@
                 },
                 {
                     "name": "Machine Shop",
-                    "image": "images/scbw/terran/machine_shop.png",
-                    "command_card": "images/scbw/terran/machine_shop_card_default.png",
+                    "image": "../images/scbw/terran/machine_shop.png",
+                    "command_card": "../images/scbw/terran/machine_shop_card_default.png",
                     "commands": [
                         { "name": "Research Ion Thrusters", "hotkey": "Q", "category": "upgrade" },
                         { "name": "Research Spider Mines", "hotkey": "W", "category": "upgrade" },
@@ -376,10 +376,10 @@
                 },
                 {
                     "name": "Starport",
-                    "image": "images/scbw/terran/starport.png",
+                    "image": "../images/scbw/terran/starport.png",
                     "command_card": {
-                        "default": "images/scbw/terran/starport_card_default.png",
-                        "lifted": "images/scbw/terran/starport_card_lifted.png"
+                        "default": "../images/scbw/terran/starport_card_default.png",
+                        "lifted": "../images/scbw/terran/starport_card_lifted.png"
                     },
                     "commands": {
                         "default": [
@@ -401,8 +401,8 @@
                 },
                 {
                     "name": "Control Tower",
-                    "image": "images/scbw/terran/control_tower.png",
-                    "command_card": "images/scbw/terran/control_tower_card_default.png",
+                    "image": "../images/scbw/terran/control_tower.png",
+                    "command_card": "../images/scbw/terran/control_tower_card_default.png",
                     "commands": [
                         { "name": "Research Cloaking Field", "hotkey": "Q", "category": "upgrade" },
                         { "name": "Research Apollo Reactor", "hotkey": "W", "category": "upgrade" }
@@ -410,8 +410,8 @@
                 },
                 {
                     "name": "Armory",
-                    "image": "images/scbw/terran/armory.png",
-                    "command_card": "images/scbw/terran/armory_card_default.png",
+                    "image": "../images/scbw/terran/armory.png",
+                    "command_card": "../images/scbw/terran/armory_card_default.png",
                     "commands": [
                         { "name": "Upgrade Vehicle Weapons", "hotkey": "Q", "category": "upgrade" },
                         { "name": "Upgrade Ship Weapons", "hotkey": "W", "category": "upgrade" },
@@ -421,10 +421,10 @@
                 },
                 {
                     "name": "Science Facility",
-                    "image": "images/scbw/terran/science_facility.png",
+                    "image": "../images/scbw/terran/science_facility.png",
                     "command_card": {
-                        "default": "images/scbw/terran/science_facility_card_default.png",
-                        "lifted": "images/scbw/terran/science_facility_card_lifted.png"
+                        "default": "../images/scbw/terran/science_facility_card_default.png",
+                        "lifted": "../images/scbw/terran/science_facility_card_lifted.png"
                     },
                     "commands": {
                         "default": [
@@ -446,8 +446,8 @@
                 },
                 {
                     "name": "Physics Lab",
-                    "image": "images/scbw/terran/physics_lab.png",
-                    "command_card": "images/scbw/terran/physics_lab_card_default.png",
+                    "image": "../images/scbw/terran/physics_lab.png",
+                    "command_card": "../images/scbw/terran/physics_lab_card_default.png",
                     "commands": [
                         { "name": "Research Yamato Gun", "hotkey": "Q", "category": "upgrade" },
                         { "name": "Research Colossus Reactor", "hotkey": "W", "category": "upgrade" }
@@ -455,8 +455,8 @@
                 },
                 {
                     "name": "Covert Ops",
-                    "image": "images/scbw/terran/covert_ops.png",
-                    "command_card": "images/scbw/terran/covert_ops_card_default.png",
+                    "image": "../images/scbw/terran/covert_ops.png",
+                    "command_card": "../images/scbw/terran/covert_ops_card_default.png",
                     "commands": [
                         { "name": "Research Lockdown", "hotkey": "Q", "category": "upgrade" },
                         { "name": "Research Personnel Cloaking", "hotkey": "W", "category": "upgrade" },
@@ -467,7 +467,7 @@
             ],
             "build_menus": {
                 "basic_structures": {
-                    "command_card": "images/scbw/terran/build_menu_card.png",
+                    "command_card": "../images/scbw/terran/build_menu_card.png",
                     "commands": [
                     { "name": "Command Center", "hotkey": "C", "category": "basic" },
                     { "name": "Supply Depot", "hotkey": "S", "category": "basic" },
@@ -480,7 +480,7 @@
                     ]
                 },
                 "advanced_structures": { 
-                    "command_card": "images/scbw/terran/adv_build_menu_card.png",
+                    "command_card": "../images/scbw/terran/adv_build_menu_card.png",
                     "commands": [
                     { "name": "Factory", "hotkey": "F", "category": "basic" },
                     { "name": "Starport", "hotkey": "S", "category": "basic" },
